@@ -108,7 +108,7 @@ I valori sono campionati a frequenze diverse, per questa motivazione si è effet
 
 ## Estrazione features diagnostiche
 
-Per ognuno dei diversi tipi di guasto (’`engine`’, ‘`ailerons`’, ‘`rudder`’, ‘`elevator`’) sono state calcolate le features diagnostiche nel tempo e in frequenza per ogni colonna dei dataframe.
+Per ognuno dei diversi tipi di guasto (’`engine`’, ‘`ailerons`’, ‘`rudder`’, ‘`elevator`’) sono state calcolate le features diagnostiche nel tempo e in frequenza, il calcolo è stato eseguito su finestre di volo di durata 1s con overlap di 0.5s.
 
 Le **feature nel tempo** sono:
 
