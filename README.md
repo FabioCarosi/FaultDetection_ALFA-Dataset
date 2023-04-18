@@ -11,18 +11,17 @@
 - [Risultati](#risultati)
 - [Conclusioni](#conclusioni)
 
-
 # Introduzione
 
 L’obiettivo del progetto è quello di progettare un classificatore diagnostico dei guasti, basandosi sui dati presenti nel dataset ALFA (scaricabile da [qui](https://kilthub.cmu.edu/articles/dataset/ALFA_A_Dataset_for_UAV_Fault_and_Anomaly_Detection/12707963)).
 
-Il codice presente nel file `FaultDetection_ALFA_Dataset.ipynb` nasce per essere eseguito in ambiente [Colab](https://colab.research.google.com/) e utilizzando [Google Drive](https://drive.google.com/) per caricare e salvare i file necessari. All’interno del file sono presenti i commenti del codice in lingua inglese. Oltre al codice è condivisa la cartella `failures` contente i file e le cartelle prodotte dal codice,
+Il codice presente nel file `FaultDetection_ALFA_Dataset.ipynb` nasce per essere eseguito in ambiente [Colab](https://colab.research.google.com/) e utilizzando [Google Drive](https://drive.google.com/) per caricare e salvare i file necessari. All’interno del file sono presenti i commenti del codice in lingua inglese. Oltre al codice è condivisa la cartella `failures` contente i file e le cartelle prodotte dal codice. Per analisi maggiormente approfondite si rimanda alla relazione del progetto presente nel repository.
 
 ---
 
 The goal of the project is to design a fault diagnostic classifier based on the data present in the ALFA dataset (downloadable from [here](https://kilthub.cmu.edu/articles/dataset/ALFA_A_Dataset_for_UAV_Fault_and_Anomaly_Detection/12707963)).
 
-The code in the file `FaultDetection_ALFA_Dataset.ipynb` is intended to be executed in a [Colab](https://colab.research.google.com/) environment and uses [Google Drive](https://drive.google.com/) to upload and save the necessary files. The code comments inside the file are in English. In addition to the code, the `failures` folder is shared, which contains the files and folders produced by the code.
+The code in the file `FaultDetection_ALFA_Dataset.ipynb` is intended to be executed in a [Colab](https://colab.research.google.com/) environment and uses [Google Drive](https://drive.google.com/) to upload and save the necessary files. The code comments inside the file are in English. In addition to the code, the `failures` folder is shared, which contains the files and folders produced by the code. For more in-depth analysis, please refer to the project report in the repository
 
 # Dataset
 
@@ -178,10 +177,8 @@ In linea generale, il dataset è stato diviso in training set e test set con per
 - Random Forest Classifier
 - K-Neighbors Classifier
 - Decision Tree Classifier
-- Gradient Boosting Classifier
 - Logistic Regression
 - SVC
-- Ada Boost Classifier
 - MLP Classifier
 
 Sono state effettuate classificazioni anche effettuando sia undersamplig che upsampling dei dati per ottenere diversi dataframe maggiormente bilanciati.
@@ -656,4 +653,11 @@ weighted avg       0.88      0.84      0.85      1240
 
 # Conclusioni
 
-## Sviluppi futuri
+Lo scopo di questo progetto era l'esecuzione di una classificazione delle diverse classi di guasto presenti nel dataset AirLab Failure and Anomaly (ALFA). È stato preso in considerazione il dataset processed disponibile e, dopo un'opportuna analisi, sono stati selezionati gli attributi più rilevanti. Dopo aver uniformato i diversi dataframe sulla stessa frequenza di campionamento, sono state estratte le features nel tempo e in frequenza su finestre temporali di 1 secondo con overlap di 0.5 secondi. Una volta unite tutte le informazioni su un unico dataframe, è stato possibile procedere con la classificazione. A tal proposito, sono stati eseguiti diversi test con l'obiettivo di trovare le configurazioni migliori. L'esecuzione dell'undersampling di tutto il dataset in base alla classe meno numerosa non ha portato a risultati soddisfacenti, in quanto risulta esserci un evidente sbilanciamento tra le classi. Si è deciso, pertanto, di procedere con una classificazione prendendo in considerazione solo le classi con il maggior numero di elementi, bilanciando il dataset in base alla classe meno popolosa. In questo test, si nota un netto miglioramento delle performance.
+Nonostante ciò, si è comunque deciso di procedere con un addestramento che comprendesse tutte le classi, cercando di risolvere il problema dello sbilanciamento.
+Si è effettuata, quindi, una classificazione completa senza alcun tipo di bilanciamento. In questo test, sono stati ottenuti ottimi valori di accuracy e di precision.
+Infine, è stata applicata la tecnica SMOTE di oversampling delle classi meno numerose effettuando due test: il primo differenzia dal secondo in quanto è stato effettuato un undersampling della classe No Fault. I risultati di entrambi test sono soddisfacenti.
+
+In tutti i test effettuati, il Random Forest si è mostrato il classificatore migliore. Escludendo il primo, i restanti test hanno mostrato una buona classificazione.
+
+Per analisi maggiormente approfondite si rimanda alla relazione del progetto presente nel repository.
