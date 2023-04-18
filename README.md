@@ -1,5 +1,17 @@
 # Fault Detection - ALFA Dataset
 
+# Indice
+
+- [Introduzione](#introduzione)
+- [Dataset](#dataset)
+- [Sviluppo](#sviluppo)
+  - [Preprocessing](#preprocessing)
+  - [Estrazione features diagnostiche](#estrazione-features-diagnostiche)
+  - [Classificazione](#classificazione)
+- [Risultati](#risultati)
+- [Conclusioni](#conclusioni)
+
+
 # Introduzione
 
 L’obiettivo del progetto è quello di progettare un classificatore diagnostico dei guasti, basandosi sui dati presenti nel dataset ALFA (scaricabile da [qui](https://kilthub.cmu.edu/articles/dataset/ALFA_A_Dataset_for_UAV_Fault_and_Anomaly_Detection/12707963)).
@@ -93,7 +105,7 @@ In particolare per ognuno dei file sono stati utilizzati le seguenti colonne:
 
 **Nota bene**: Nel caso in cui sono presenti i dati dei valori desiderati e dei valori reali (es: `field.commanded` e `field.measured`) è stato calcolato un delta tra i due valori ed è stato considerato solo quest’ultimo valore.
 
-I valori sono campionati a frequenze diverse, per questa motivazione si è effettuato un resample dei dati alla frequenza più alta presente nei sensori (pari a 20Hz) utilizzando al tecnica del \***\*\*\*\*\*\*\***forward fill\***\*\*\*\*\*\*\*** per i dati mancanti.
+I valori sono campionati a frequenze diverse, per questa motivazione si è effettuato un resample dei dati alla frequenza più alta presente nei sensori (pari a 20Hz) utilizzando al tecnica del **forward fill** per i dati mancanti.
 
 ## Estrazione features diagnostiche
 
