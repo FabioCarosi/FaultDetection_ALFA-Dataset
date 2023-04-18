@@ -1,7 +1,5 @@
 # Fault Detection - ALFA Dataset
 
-![Untitled](images/results/Untitled.png)
-
 # Introduzione
 
 L’obiettivo del progetto è quello di progettare un classificatore diagnostico dei guasti, basandosi sui dati presenti nel dataset ALFA (scaricabile da [qui](https://kilthub.cmu.edu/articles/dataset/ALFA_A_Dataset_for_UAV_Fault_and_Anomaly_Detection/12707963)).
