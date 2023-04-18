@@ -202,9 +202,9 @@ Accuracy: 0.44 	 ---> LogisticRegression
 Accuracy: 0.48 	 ---> MLPClassifier
 ```
 
-![Untitled](images/results/Untitled%201.png)
+![Untitled](images/results/03-1.png)
 
-![Untitled](images/results/Untitled%202.png)
+![Untitled](images/results/03-2.png)
 
 ```
 RandomForestClassifier Classification Report:
@@ -323,9 +323,9 @@ Accuracy: 0.47 	 ---> LogisticRegression
 Accuracy: 0.62 	 ---> MLPClassifier
 ```
 
-![Untitled](images/results/Untitled%203.png)
+![Untitled](images/results/04-1.png)
 
-![Untitled](images/results/Untitled%204.png)
+![Untitled](images/results/04-2.png)
 
 ```
 RandomForestClassifier Classification Report:
@@ -411,9 +411,9 @@ Accuracy: 0.89 	 ---> KNeighborsClassifier
 Accuracy: 0.85 	 ---> DecisionTreeClassifier
 ```
 
-![Untitled](images/results/Untitled%205.png)
+![Untitled](images/results/02-1.png)
 
-![Untitled](images/results/Untitled%206.png)
+![Untitled](images/results/02-2.png)
 
 ```
 RandomForestClassifier Classification Report:
@@ -481,9 +481,9 @@ Accuracy: 0.41 	 ---> LogisticRegression
 Accuracy: 0.59 	 ---> MLPClassifier
 ```
 
-![Untitled](images/results/Untitled%207.png)
+![Untitled](images/results/05-1.png)
 
-![Untitled](images/results/Untitled%208.png)
+![Untitled](images/results/05-2.png)
 
 ```
 RandomForestClassifier Classification Report:
@@ -594,9 +594,9 @@ Accuracy: 0.77 	 ---> KNeighborsClassifier
 Accuracy: 0.84 	 ---> DecisionTreeClassifier
 ```
 
-![Untitled](images/results/Untitled%209.png)
+![Untitled](images/results/01-1.png)
 
-![Untitled](images/results/Untitled%2010.png)
+![Untitled](images/results/01-2.png)
 
 ```
 RandomForestClassifier Classification Report:
