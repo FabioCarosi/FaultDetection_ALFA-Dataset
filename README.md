@@ -659,7 +659,7 @@ L'esecuzione dell'undersampling di tutto il dataset in base alla classe meno num
 
 Si è comunque deciso di procedere con un addestramento che comprendesse tutte le classi, effettuando una classificazione completa senza alcun tipo di bilanciamento. In questo test, sono stati ottenuti ottimi valori di accuracy e di precision.
 
-Infine, è stata applicata la tecnica SMOTE di oversampling delle classi meno numerose effettuando due test: il primo differenzia dal secondo in quanto è stato effettuato un undersampling della classe `no_fault`. I risultati ottenuti effetuando l'oversampling risento del problema dei dati sintetici, pur aumentando l'accuracy soprattutto della classi meno rappresentate, aumenta il numero di errate classificazione della classe `no_fault` che porta quindi ad un incremento del numero di falsi allarmi.
+Infine, è stata applicata la tecnica SMOTE di oversampling delle classi meno numerose effettuando due test: il primo differenzia dal secondo in quanto è stato effettuato un undersampling della classe `no_fault`. I risultati ottenuti effetuando l'oversampling risentono del problema dei dati sintetici, infatti, nonostante l'aumento dell'accuracy delle classi meno rappresentate, aumenta il numero di classificazioni errate della classe `no_fault` che porta quindi ad un incremento del numero di falsi allarmi.
 
 In tutti i test effettuati, il Random Forest si è mostrato il classificatore migliore. Escludendo il primo, i restanti test hanno mostrato una buona classificazione.
 
